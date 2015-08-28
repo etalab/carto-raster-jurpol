@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" buffer-size="256" font-directory="./fonts">
+
+<Parameters>
+  <Parameter name="scale">1</Parameter>
+  <Parameter name="metatile">1</Parameter>
+  <Parameter name="name"><![CDATA[Justice-Police]]></Parameter>
+  <Parameter name="bounds">-5.14223839797325,41.3332277729552,9.56036371003871,51.08984197105</Parameter>
+  <Parameter name="center">2.37681,48.84949,18</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="minzoom">5</Parameter>
+  <Parameter name="maxzoom">18</Parameter>
+</Parameters>
+
+
+<Style name="zonage_commissariats_brigades" filter-mode="first" opacity="0.5">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([institution] = 'PN')</Filter>
+    <LineSymbolizer stroke="#444444" offset="-1" stroke-width="2" stroke-linejoin="round" />
+    <TextSymbolizer fill="#000000" halo-fill="#ffffff" dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="2" placement="line" margin="5" minimum-padding="1" spacing="200" ><![CDATA[[service]]]></TextSymbolizer>
+    <PolygonPatternSymbolizer opacity="0.1" file="squares.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([institution] = 'PN')</Filter>
+    <LineSymbolizer stroke="#444444" offset="-1" stroke-width="2" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <LineSymbolizer stroke="#0000ff" offset="-1" stroke-width="2" stroke-linejoin="round" />
+    <TextSymbolizer fill="#ffffff" halo-fill="#0000ff" dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="2" placement="line" margin="5" minimum-padding="1" spacing="200" ><![CDATA[[service]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke="#0000ff" offset="-1" stroke-width="2" stroke-linejoin="round" />
+  </Rule>
+</Style>
+<Layer name="zonage_commissariats_brigades"
+>
+    <StyleName>zonage_commissariats_brigades</StyleName>  </Layer>
+
+<Style name="zonage_tgi-label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([couleur] = 5)</Filter>
+    <PolygonSymbolizer fill="#ffff00" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+    <TextSymbolizer dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="1" fill="#000000" halo-fill="#ffffff" placement="line" spacing="400" margin="5" minimum-padding="1" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([couleur] = 5)</Filter>
+    <PolygonSymbolizer fill="#ffff00" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 5)</Filter>
+    <PolygonSymbolizer fill="#ffff00" fill-opacity="0.15" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([couleur] = 4)</Filter>
+    <PolygonSymbolizer fill="#ff00ff" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+    <TextSymbolizer dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="1" fill="#000000" halo-fill="#ffffff" placement="line" spacing="400" margin="5" minimum-padding="1" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([couleur] = 4)</Filter>
+    <PolygonSymbolizer fill="#ff00ff" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 4)</Filter>
+    <PolygonSymbolizer fill="#ff00ff" fill-opacity="0.15" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([couleur] = 3)</Filter>
+    <PolygonSymbolizer fill="#0000ff" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+    <TextSymbolizer dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="1" fill="#000000" halo-fill="#ffffff" placement="line" spacing="400" margin="5" minimum-padding="1" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([couleur] = 3)</Filter>
+    <PolygonSymbolizer fill="#0000ff" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 3)</Filter>
+    <PolygonSymbolizer fill="#0000ff" fill-opacity="0.15" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([couleur] = 2)</Filter>
+    <PolygonSymbolizer fill="#008000" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+    <TextSymbolizer dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="1" fill="#000000" halo-fill="#ffffff" placement="line" spacing="400" margin="5" minimum-padding="1" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([couleur] = 2)</Filter>
+    <PolygonSymbolizer fill="#008000" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 2)</Filter>
+    <PolygonSymbolizer fill="#008000" fill-opacity="0.15" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([couleur] = 1)</Filter>
+    <PolygonSymbolizer fill="#ffa500" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+    <TextSymbolizer dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="1" fill="#000000" halo-fill="#ffffff" placement="line" spacing="400" margin="5" minimum-padding="1" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([couleur] = 1)</Filter>
+    <PolygonSymbolizer fill="#ffa500" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 1)</Filter>
+    <PolygonSymbolizer fill="#ffa500" fill-opacity="0.15" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#ffffff" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+    <TextSymbolizer dy="-4" size="12" face-name="DejaVu Sans Book" halo-radius="1" fill="#000000" halo-fill="#ffffff" placement="line" spacing="400" margin="5" minimum-padding="1" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#ffffff" fill-opacity="0.15" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Oblique" halo-radius="1" fill="#000000" halo-fill="#ffffff" margin="5" minimum-padding="15" ><![CDATA['TGI '+[osm_nom]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#ffffff" fill-opacity="0.15" />
+  </Rule>
+</Style>
+<Style name="zonage_tgi-line" filter-mode="first" opacity="0.4">
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="6" stroke="#808080" stroke-linejoin="round" />
+  </Rule>
+</Style>
+<Layer name="zonage_tgi"
+>
+    <StyleName>zonage_tgi-line</StyleName>
+    <StyleName>zonage_tgi-label</StyleName>  </Layer>
+
+<Style name="poi_commissariats_brigades" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Gendarmerie')</Filter>
+    <MarkersSymbolizer width="8" />
+    <TextSymbolizer fill="#0000ff" size="14" face-name="DejaVu Sans Book" halo-radius="1.5" halo-fill="#ffffff" minimum-padding="1" placement-type="simple" placements="SE,NE,SW,NW" wrap-width="128" dx="4" dy="4" ><![CDATA[[service]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Gendarmerie')</Filter>
+    <MarkersSymbolizer width="8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Police')</Filter>
+    <MarkersSymbolizer fill="#ffffff" width="8" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Book" halo-radius="1.5" fill="#000000" halo-fill="#ffffff" minimum-padding="1" placement-type="simple" placements="SE,NE,SW,NW" wrap-width="128" dx="4" dy="4" ><![CDATA[[service]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Police')</Filter>
+    <MarkersSymbolizer fill="#ffffff" width="8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MarkersSymbolizer width="8" />
+    <TextSymbolizer size="14" face-name="DejaVu Sans Book" halo-radius="1.5" fill="#000000" halo-fill="#ffffff" minimum-padding="1" placement-type="simple" placements="SE,NE,SW,NW" wrap-width="128" dx="4" dy="4" ><![CDATA[[service]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <MarkersSymbolizer width="8" />
+  </Rule>
+</Style>
+<Layer name="poi_commissariats_brigades"
+>
+    <StyleName>poi_commissariats_brigades</StyleName>  </Layer>
+
+</Map>
