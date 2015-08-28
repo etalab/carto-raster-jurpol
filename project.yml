@@ -20,7 +20,7 @@ overlay:
   position: -1
 Stylesheet:
 - "style.mss"
-source: 'tms:https://carto.data.gouv.fr/vector/tgi:all/{z}/{x}/{y}.mvt'
+source: 'tms://carto.data.gouv.fr/vector/tgi:all/{z}/{x}/{y}.mvt'
 layers:
   - zonage_commissariats_brigades
   - zonage_tgi
