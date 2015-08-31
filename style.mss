@@ -12,23 +12,23 @@ Map {
   font-directory: url('./fonts');
 }
 
-#zonage_tgi.geo::geo [zoom>10] {
+#zonage_tgi.geo::geo [zoom>=5] {
   opacity: 0.4;
-  line-width: 6;
-  line-color: grey;
-  line-join: round;
-  polygon-fill: white;
-  polygon-opacity: 0.4;
   [couleur=1] {polygon-fill: orange; }
   [couleur=2] {polygon-fill: green; }
   [couleur=3] {polygon-fill: blue; }
   [couleur=4] {polygon-fill: magenta; }
   [couleur=5] {polygon-fill: yellow; }
+  [zoom>=9] {
+    line-width: 6;
+    line-color: grey;
+    line-join: round;
+    polygon-fill: white;
+    polygon-opacity: 0.4;
+  }
 }
 
-#zonage_tgi.label::label {
-
-  [zoom>=9] {
+#zonage_tgi.label::label [zoom>=9] {
   text-name: "TGI "+[osm_nom];
   text-size: 14;
   text-face-name: @sans_italic;
@@ -37,8 +37,7 @@ Map {
   text-halo-fill: white;
   text-margin: 5;
   text-min-padding: 15;
-  }
-
+  
   [zoom>=13] {
   b/text-name: "TGI "+[osm_nom];
   b/text-dy: -4;
