@@ -12,8 +12,9 @@ Map {
   font-directory: url('./fonts');
 }
 
-#zonage_tgi.geo::geo [zoom>=5] {
+#zonage_tgi.geo::geo [zoom>=5]{
   opacity: 0.4;
+  polygon-opacity: 0.4;
   [couleur=1] {polygon-fill: orange; }
   [couleur=2] {polygon-fill: green; }
   [couleur=3] {polygon-fill: blue; }
@@ -23,8 +24,7 @@ Map {
     line-width: 6;
     line-color: grey;
     line-join: round;
-    polygon-fill: white;
-    polygon-opacity: 0.4;
+
   }
 }
 

@@ -16,39 +16,74 @@
 
 <Style name="zonage_tgi-geo" filter-mode="first" opacity="0.4">
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <Filter>([couleur] = 5)</Filter>
+    <PolygonSymbolizer fill="#ffff00" fill-opacity="0.4" />
     <LineSymbolizer stroke-width="6" stroke="#808080" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 5)</Filter>
     <PolygonSymbolizer fill="#ffff00" fill-opacity="0.4" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <Filter>([couleur] = 4)</Filter>
+    <PolygonSymbolizer fill="#ff00ff" fill-opacity="0.4" />
     <LineSymbolizer stroke-width="6" stroke="#808080" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 4)</Filter>
     <PolygonSymbolizer fill="#ff00ff" fill-opacity="0.4" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <Filter>([couleur] = 3)</Filter>
+    <PolygonSymbolizer fill="#0000ff" fill-opacity="0.4" />
     <LineSymbolizer stroke-width="6" stroke="#808080" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 3)</Filter>
     <PolygonSymbolizer fill="#0000ff" fill-opacity="0.4" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <Filter>([couleur] = 2)</Filter>
+    <PolygonSymbolizer fill="#008000" fill-opacity="0.4" />
     <LineSymbolizer stroke-width="6" stroke="#808080" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 2)</Filter>
     <PolygonSymbolizer fill="#008000" fill-opacity="0.4" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <Filter>([couleur] = 1)</Filter>
+    <PolygonSymbolizer fill="#ffa500" fill-opacity="0.4" />
     <LineSymbolizer stroke-width="6" stroke="#808080" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([couleur] = 1)</Filter>
     <PolygonSymbolizer fill="#ffa500" fill-opacity="0.4" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <PolygonSymbolizer fill-opacity="0.4" />
     <LineSymbolizer stroke-width="6" stroke="#808080" stroke-linejoin="round" />
-    <PolygonSymbolizer fill="#ffffff" fill-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <PolygonSymbolizer fill-opacity="0.4" />
   </Rule>
 </Style>
 <Layer name="zonage_tgi"
@@ -152,4 +187,3 @@
     <StyleName>zonage_communes</StyleName>  </Layer>
 
 </Map>
-
