@@ -74,6 +74,31 @@ Map {
   }
 }
 
+#zonage_communes {
+  background/line-color: white;
+  background/line-width: 2;
+  comp-op: darken;
+  opacity: 0.5;
+
+  line-color: black;
+  line-width: 2;
+  line-dasharray: 4,4;
+
+  text-name: [nom];
+  text-fill: black;
+  text-halo-fill: white;
+  text-dy: -4;
+  text-size: 11;
+  text-face-name: @sans;
+  text-halo-radius: 2;
+  text-placement: line;
+  text-margin: 5;
+  text-min-padding: 1;
+  text-spacing: 200;
+  text-max-char-angle-delta: 30;
+
+}
+
 #zonage_commissariats_brigades [zoom>=10]{
   opacity: 0.66;
   line-color: blue;

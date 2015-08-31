@@ -12,7 +12,7 @@ center:
   - 18
 format: "png"
 minzoom: 5
-maxzoom: 18
+maxzoom: 20
 srs: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
 overlay:
   active: false
@@ -21,9 +21,11 @@ overlay:
 Stylesheet:
 - "style.mss"
 source: 'tms://carto.data.gouv.fr/vector/tgi:all/{z}/{x}/{y}.mvt'
+#source: 'tms://localhost:3579/all/{z}/{x}/{y}.mvt'
 layers:
   - zonage_tgi.geo
   - zonage_commissariats_brigades
   - zonage_tgi.label
   - poi_commissariats_brigades
+  - zonage_communes
 
