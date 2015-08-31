@@ -12,27 +12,27 @@ Map {
   font-directory: url('./fonts');
 }
 
-#zonage_tgi::line [zoom>10] {
+#zonage_tgi.geo::geo [zoom>10] {
   opacity: 0.4;
   line-width: 6;
   line-color: grey;
   line-join: round;
+  polygon-fill: white;
+  polygon-opacity: 0.4;
+  [couleur=1] {polygon-fill: orange; }
+  [couleur=2] {polygon-fill: green; }
+  [couleur=3] {polygon-fill: blue; }
+  [couleur=4] {polygon-fill: magenta; }
+  [couleur=5] {polygon-fill: yellow; }
 }
 
-#zonage_tgi::label {
-	polygon-fill: white;
-	polygon-opacity: 0.15;
-	[couleur=1] {polygon-fill: orange; }
-	[couleur=2] {polygon-fill: green; }
-	[couleur=3] {polygon-fill: blue; }
-	[couleur=4] {polygon-fill: magenta; }
-	[couleur=5] {polygon-fill: yellow; }
+#zonage_tgi.label::label {
 
   [zoom>=9] {
   text-name: "TGI "+[osm_nom];
   text-size: 14;
   text-face-name: @sans_italic;
-  text-halo-radius: 1;
+  text-halo-radius: 1.5;
   text-fill: black;
   text-halo-fill: white;
   text-margin: 5;
@@ -75,15 +75,18 @@ Map {
 }
 
 #zonage_commissariats_brigades [zoom>=10]{
-  opacity: 0.5;
+  opacity: 0.66;
   line-color: blue;
   [institution='PN'] {
     line-color: #444;
   }
-  line-offset: -1;
-  line-width: 2;
+  line-offset: -0.5;
+  line-width: 1;
   line-join: round;
   [zoom>=13] {
+  line-offset: -1;
+  line-width: 2;
+
   [institution='PN'] {
     text-fill: black;
     text-halo-fill: white;
@@ -94,13 +97,14 @@ Map {
   text-fill: white;
   text-halo-fill: blue;
   text-dy: -4;
-  text-size: 12;
+  text-size: 11;
   text-face-name: @sans;
   text-halo-radius: 2;
   text-placement: line;
   text-margin: 5;
   text-min-padding: 1;
   text-spacing: 200;
+  text-max-char-angle-delta: 30;
  }
 
 }

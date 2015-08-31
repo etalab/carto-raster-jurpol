@@ -22,7 +22,8 @@ Stylesheet:
 - "style.mss"
 source: 'tms://carto.data.gouv.fr/vector/tgi:all/{z}/{x}/{y}.mvt'
 layers:
+  - zonage_tgi.geo
   - zonage_commissariats_brigades
-  - zonage_tgi
+  - zonage_tgi.label
   - poi_commissariats_brigades
 
